@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-image:linear-gradient(blue,gray,white);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        width: 600px;
+        
+       }
+       .box{
+        border: 3px solid blanchedalmond;
+        border-radius: 20px;
+        height: 600px;
+        width: 600px;
+        
+
+       }
+       .img1{
+        border-radius: 100%;
+        margin-top: 60px;
+       }
+
+       .cd1:active~.img1{
+
+        transform: perspective(200px) skew(50deg);
+
+       }
+       .cd2:active~.img1{
+
+transform: perspective(200px) scale(2);
+
+}
+
+.cd3:active~.img1{
+
+transform: perspective(200px) rotate(270deg);
+
+}
+
+.cd4:active~.img1{
+
+transform: perspective(200px) translate(120px,120px);
+
+}
+
+button{
+
+    background-color:black;
+    font-size: 20px;
+    font-style: italic;
+    color: blue;
+    border-radius: 20px;
+
+
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <button class="cd1">skew</button>
+        <button class="cd2"> scale</button>
+        <button class="cd3">rotate</button>
+        <button class="cd4"> translate</button>
+        <img  class="img1" src="kodal1.jpg" height="200px" width="200px">
+        
+        
+        
+     
+    </div>
+    
+</body>
+</html>
